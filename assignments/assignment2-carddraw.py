@@ -1,4 +1,5 @@
-
+# assignment 1
+# Author : Finian Doonan
 
 
 
@@ -6,9 +7,9 @@ import requests
 
 # Step 1: Shuffle a new deck
 shuffle_url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1"
-shuffle_response = requests.get(shuffle_url).json()
+response = requests.get(shuffle_url).json()
 
-deck_id = shuffle_response["deck_id"]
+deck_id = response["deck_id"]
 
 # Step 2: Draw 5 cards using the deck_id
 draw_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=5"
