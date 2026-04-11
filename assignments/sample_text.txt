@@ -1,3 +1,3 @@
-Andrew is learning Python.
-This file belongs to Andrew for the WSAA assignment.
-Hello Andrew, welcome to GitHub automation.
+Finian is learning Python.
+This file belongs to Finian for the WSAA assignment.
+Hello Finian, welcome to GitHub automation.
