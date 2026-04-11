@@ -1,3 +1,5 @@
+# assignment 04
+# Author : Finian Doonan
 
 from config import config
 from github import Github
