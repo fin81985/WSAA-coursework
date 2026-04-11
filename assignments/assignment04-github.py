@@ -3,10 +3,10 @@ from config import config
 from github import Github
 from github.Auth import Token
 
-apikey = config.get("github_key")
+apikey = config.get("github_key") # Get the github api key from the config file
 
-auth = Token(apikey)
-g = Github(auth=auth)
+auth = Token(apikey) # Authenticate to github using the token from the config
+g = Github(auth=auth) # Create a github object using the authenticated token
 
 
 # Repo details
@@ -15,7 +15,7 @@ file_path = "assignments/sample_text.txt"
 commit_message = "Replaced 'Andrew' with 'Finian' for assignment04"
 
 try:
-    repo = g.get_repo(repo_name)
+    repo = g.get_repo(repo_name)# Get the repo object for the repo we want to update
 
     file = repo.get_contents(file_path)
     content = file.decoded_content.decode("utf-8")

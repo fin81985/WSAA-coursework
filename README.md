@@ -52,10 +52,6 @@ On successful completion of this module, learners will be able to:
   - Flush  
 - Print a congratulatory message if detected.  
 
-**Tips:**  
-- Use the `requests` library for API calls.  
-- Store card values and suits in lists.  
-- Use sets and sorting to detect patterns.  
 
 ---
 
@@ -88,18 +84,9 @@ On successful completion of this module, learners will be able to:
 - Authentication is required (do not include keys).  
 - Code should be functional and clearly structured.  
 
-**Tips:**  
-- Use `requests` or `PyGithub`.  
-- Handle Base64 encoding/decoding for file contents.  
-- Store tokens securely (e.g., environment variables).  
+**Comment:**  
+This program uses a GitHub Personal Access Token (stored in config.py) to securely connect to a GitHub repository. It reads a file from the repository, replaces all occurrences of the name “Andrew” with “Finian”, and then commits and pushes the updated file back to GitHub. The config.py file is added to .gitignore to ensure the token is not uploaded to GitHub for security reasons. 
 
----
-
-## Notes  
-- Ensure your code is **well-structured and readable**.  
-- Follow exact filenames for submission.  
-- Programs should run without errors.  
-- Minimal comments are required but should show understanding.  
 
 ---
 
