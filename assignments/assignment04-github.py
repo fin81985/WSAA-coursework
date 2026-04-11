@@ -1,16 +1,13 @@
+
+from config import config
 from github import Github
 from github.Auth import Token
-import os
 
-# Get token from environment
-apikey = os.getenv("GITHUB_KEY")
+apikey = config.get("github_key")
 
-if not apikey:
-    raise Exception("GITHUB_KEY environment variable not set")
-
-# Correct authentication (PyGithub modern way)
 auth = Token(apikey)
 g = Github(auth=auth)
+
 
 # Repo details
 repo_name = "fin81985/WSAA-coursework"
@@ -33,4 +30,5 @@ try:
 
 except Exception as e:
     print(f"Error: {e}")
+
 
