@@ -1,77 +1,118 @@
-Web Services and Applications – Assignments 2025
 
-Author: Finian Doonan
+# Web Services and Applications – Assignments 2025  
+**Author:** Finian Doonan  
 
-📘 Module Overview
+## Module Overview  
+This module introduces learners to the design and development of web services and applications using Python. The focus is on interacting with APIs, handling HTTP requests, retrieving online data, and automating tasks involving web-based systems.
 
-This repository contains assignments for the Web Services and Applications module.
-The module focuses on working with APIs, handling HTTP requests, and automating interactions with web-based systems using Python.
+---
 
-🎯 Learning Outcomes
+## Learning Outcomes  
+On successful completion of this module, learners will be able to:
 
-By completing these assignments, I demonstrate the ability to:
+1. **Interact with web APIs using HTTP requests**  
+   - Send and receive data from RESTful services.
 
-Work with REST APIs using HTTP requests
-Retrieve and store data from online services
-Process JSON data
-Automate tasks using Python
-Integrate external web services into applications
-📂 Repository Structure
-.
-├── assignment2-carddraw.py
-├── assignment03-cso.ipynb
-├── assignment04-github.py
-└── README.md
+2. **Retrieve, process, and store data from online services**  
+   - Work with live data sources and save them locally.
 
-📝 Assignments
-🃏 Assignment 2 – Card Draw API
+3. **Work with JSON data formats**  
+   - Parse and manipulate structured data returned from APIs.
 
-File: assignment2-carddraw.py
+4. **Automate tasks involving web-based platforms**  
+   - Develop scripts to perform repetitive web interactions.
 
-Uses the Deck of Cards API
-Shuffles a deck and draws 5 cards
-Prints card values and suits
-Detects poker hands:
-Pair
-Three of a kind
-Straight
-Flush
-📊 Assignment 3 – CSO Data Retrieval
+---
 
-File: assignment03-cso.ipynb
+## Contents – Assignments
 
-Retrieves dataset: Exchequer Account (Historical Series)
-Source: CSO (Central Statistics Office)
-Saves data locally as cso.json
-Focus on data retrieval only (no analysis)
-🔧 Assignment 4 – GitHub Automation
+| Assignment | Filename | Description |
+|------------|---------|-------------|
+| 2 | `assignment2-carddraw.py` | Draw 5 cards using an API and evaluate the hand. |
+| 3 | `assignment03-cso.ipynb` | Retrieve CSO dataset and save as JSON. |
+| 4 | `assignment04-github.py` | Modify file in GitHub repo and push changes. |
 
-File: assignment04-github.py
+---
 
-Reads a file from a GitHub repository
-Replaces all instances of "Andrew" with my name
-Commits and pushes the updated file back to GitHub
-Uses authentication (tokens not included in repo)
-⚙️ Technologies Used
-Python
-requests (API calls)
-JSON
-Git & GitHub
-(Optional) PyGithub
-🚀 How to Run
-Clone the repository:
-git clone <your-repo-url>
+## Assignment Details
 
-Navigate into the folder:
-cd <repo-name>
+### Assignment 2 – Card Draw API  
+**Filename:** `assignment2-carddraw.py`  
 
-Run Python scripts:
-python assignment2-carddraw.py
+**Description:**  
+- Use the Deck of Cards API to simulate dealing a hand of 5 cards.  
+- Shuffle a deck and retrieve a `deck_id`.  
+- Draw 5 cards and print their value and suit.  
 
-Open notebooks:
-jupyter notebook
+**Bonus (Final Marks):**  
+- Check if the hand contains:
+  - Pair  
+  - Three of a kind  
+  - Straight  
+  - Flush  
+- Print a congratulatory message if detected.  
 
-🔐 Notes
-API keys / tokens are not included for security reasons
-Ensure you have proper authentication set up for GitHub tasks
-All assignments follow the required naming conventions
+**Tips:**  
+- Use the `requests` library for API calls.  
+- Store card values and suits in lists.  
+- Use sets and sorting to detect patterns.  
+
+---
+
+### Assignment 3 – CSO Data Retrieval  
+**Filename:** `assignment03-cso.ipynb`  
+
+**Description:**  
+- Retrieve the dataset: *Exchequer Account (Historical Series)* from CSO.ie.  
+- Save the dataset locally as `cso.json`.  
+
+**Requirements:**  
+- Keep the program short (~10 lines).  
+- No need to analyse or reformat the data.  
+
+**Tips:**  
+- Use `requests` to fetch the data.  
+- Save using Python file handling (`open`, `write`).  
+
+---
+
+### Assignment 4 – GitHub File Modification  
+**Filename:** `assignment04-github.py`  
+
+**Description:**  
+- Read a file from a GitHub repository.  
+- Replace all instances of `"Andrew"` with your name.  
+- Commit and push the updated file back to the repository.  
+
+**Requirements:**  
+- Authentication is required (do not include keys).  
+- Code should be functional and clearly structured.  
+
+**Tips:**  
+- Use `requests` or `PyGithub`.  
+- Handle Base64 encoding/decoding for file contents.  
+- Store tokens securely (e.g., environment variables).  
+
+---
+
+## Notes  
+- Ensure your code is **well-structured and readable**.  
+- Follow exact filenames for submission.  
+- Programs should run without errors.  
+- Minimal comments are required but should show understanding.  
+
+---
+
+## References & Resources  
+
+**APIs & Web Services**  
+- [Deck of Cards API](https://deckofcardsapi.com/)  
+- [CSO Website](https://www.cso.ie/)  
+
+**Python & HTTP Requests**  
+- [Requests Library Documentation](https://docs.python-requests.org/)  
+- [Real Python – APIs](https://realpython.com/api-integration-in-python/)  
+
+**GitHub Integration**  
+- [GitHub REST API](https://docs.github.com/en/rest)  
+- [PyGithub Documentation](https://pygithub.readthedocs.io/)  
